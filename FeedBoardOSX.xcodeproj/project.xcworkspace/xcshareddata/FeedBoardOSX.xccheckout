@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E707E38A-B4E2-4BC0-8C2F-B503338A04E7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FeedBoardOSX</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AC1662B6-2DF9-4163-96E9-1C51C6931800</key>
+		<string>https://github.com/jeneiv/feedBoardOSX.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FeedBoardOSX.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AC1662B6-2DF9-4163-96E9-1C51C6931800</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jeneiv/feedBoardOSX.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AC1662B6-2DF9-4163-96E9-1C51C6931800</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AC1662B6-2DF9-4163-96E9-1C51C6931800</string>
+			<key>IDESourceControlWCCName</key>
+			<string>feedBoardOSX</string>
+		</dict>
+	</array>
+</dict>
+</plist>
