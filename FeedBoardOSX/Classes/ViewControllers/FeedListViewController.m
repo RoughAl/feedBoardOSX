@@ -8,19 +8,23 @@
 
 #import "FeedListViewController.h"
 
-@interface FeedListViewController ()
+@interface FeedListViewController () {
+    __weak IBOutlet NSButton * _addFeedButton;
+    __weak IBOutlet NSButton * _deleteFeedButton;
+}
 
 @end
 
 @implementation FeedListViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Initialization code here.
-    }
-    return self;
+#pragma mark - UI Actions
+
+- (IBAction)addButtonPressed:(id)sender {
+    NSLog(@"Add Button Pressed");
+}
+
+- (IBAction)deleteButtonPressed:(id)sender {
+    NSLog(@"Delete Button Pressed");
 }
 
 @end
