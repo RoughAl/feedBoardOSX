@@ -26,6 +26,14 @@
 		7542906F18A02C0900904148 /* icon128@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7542906718A02C0900904148 /* icon128@2x.png */; };
 		7542907018A02C0900904148 /* icon256.png in Resources */ = {isa = PBXBuildFile; fileRef = 7542906818A02C0900904148 /* icon256.png */; };
 		7542907118A02C0900904148 /* icon256@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7542906918A02C0900904148 /* icon256@2x.png */; };
+		7593AA9C18A0F5FF00E7C016 /* FeedListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7593AA9B18A0F5FF00E7C016 /* FeedListViewController.m */; };
+		7593AA9E18A0F65A00E7C016 /* FeedListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7593AA9D18A0F65A00E7C016 /* FeedListView.xib */; };
+		7593AAA118A0F6AD00E7C016 /* FeedItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7593AAA018A0F6AD00E7C016 /* FeedItemsViewController.m */; };
+		7593AAA318A0F6ED00E7C016 /* FeedItemsListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7593AAA218A0F6ED00E7C016 /* FeedItemsListView.xib */; };
+		7593AAA618A0F79A00E7C016 /* FeedItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7593AAA518A0F79A00E7C016 /* FeedItemViewController.m */; };
+		7593AAA818A0F7D000E7C016 /* FeedItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7593AAA718A0F7D000E7C016 /* FeedItemView.xib */; };
+		7593AAAB18A0F85300E7C016 /* FeedBoardWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7593AAAA18A0F85300E7C016 /* FeedBoardWindow.m */; };
+		7593AAB818A13BB500E7C016 /* UIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7593AAB718A13BB500E7C016 /* UIHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +74,19 @@
 		7542906718A02C0900904148 /* icon128@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon128@2x.png"; path = "Resources/Images/Icons/icon128@2x.png"; sourceTree = "<group>"; };
 		7542906818A02C0900904148 /* icon256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon256.png; path = Resources/Images/Icons/icon256.png; sourceTree = "<group>"; };
 		7542906918A02C0900904148 /* icon256@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon256@2x.png"; path = "Resources/Images/Icons/icon256@2x.png"; sourceTree = "<group>"; };
+		7593AA9A18A0F5FF00E7C016 /* FeedListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedListViewController.h; path = Classes/ViewControllers/FeedListViewController.h; sourceTree = "<group>"; };
+		7593AA9B18A0F5FF00E7C016 /* FeedListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedListViewController.m; path = Classes/ViewControllers/FeedListViewController.m; sourceTree = "<group>"; };
+		7593AA9D18A0F65A00E7C016 /* FeedListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedListView.xib; path = Resources/Nibs/FeedListView.xib; sourceTree = "<group>"; };
+		7593AA9F18A0F6AD00E7C016 /* FeedItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedItemsViewController.h; path = Classes/ViewControllers/FeedItemsViewController.h; sourceTree = "<group>"; };
+		7593AAA018A0F6AD00E7C016 /* FeedItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedItemsViewController.m; path = Classes/ViewControllers/FeedItemsViewController.m; sourceTree = "<group>"; };
+		7593AAA218A0F6ED00E7C016 /* FeedItemsListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedItemsListView.xib; path = Resources/Nibs/FeedItemsListView.xib; sourceTree = "<group>"; };
+		7593AAA418A0F79A00E7C016 /* FeedItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedItemViewController.h; path = Classes/ViewControllers/FeedItemViewController.h; sourceTree = "<group>"; };
+		7593AAA518A0F79A00E7C016 /* FeedItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedItemViewController.m; path = Classes/ViewControllers/FeedItemViewController.m; sourceTree = "<group>"; };
+		7593AAA718A0F7D000E7C016 /* FeedItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedItemView.xib; path = Resources/Nibs/FeedItemView.xib; sourceTree = "<group>"; };
+		7593AAA918A0F85300E7C016 /* FeedBoardWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedBoardWindow.h; path = Classes/FeedBoardWindow.h; sourceTree = "<group>"; };
+		7593AAAA18A0F85300E7C016 /* FeedBoardWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedBoardWindow.m; path = Classes/FeedBoardWindow.m; sourceTree = "<group>"; };
+		7593AAB618A13BB500E7C016 /* UIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIHelper.h; path = Classes/Helpers/UIHelper.h; sourceTree = "<group>"; };
+		7593AAB718A13BB500E7C016 /* UIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIHelper.m; path = Classes/Helpers/UIHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +192,7 @@
 		7542905A18A026F600904148 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7542905C18A0273A00904148 /* Nib */,
+				7542905C18A0273A00904148 /* Nibs */,
 				7542905B18A0272F00904148 /* Images */,
 				7542903E18A026CA00904148 /* Images.xcassets */,
 			);
@@ -186,19 +207,26 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
-		7542905C18A0273A00904148 /* Nib */ = {
+		7542905C18A0273A00904148 /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
 				7542905D18A0276500904148 /* MainMenu.xib */,
+				7593AA9D18A0F65A00E7C016 /* FeedListView.xib */,
+				7593AAA218A0F6ED00E7C016 /* FeedItemsListView.xib */,
+				7593AAA718A0F7D000E7C016 /* FeedItemView.xib */,
 			);
-			name = Nib;
+			name = Nibs;
 			sourceTree = "<group>";
 		};
 		7542906018A0279700904148 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7593AAB518A13B9900E7C016 /* Helpers */,
+				7593AA9918A0EC4600E7C016 /* ViewControllers */,
 				7542903818A026CA00904148 /* AppDelegate.h */,
 				7542903918A026CA00904148 /* AppDelegate.m */,
+				7593AAA918A0F85300E7C016 /* FeedBoardWindow.h */,
+				7593AAAA18A0F85300E7C016 /* FeedBoardWindow.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -216,6 +244,28 @@
 				7542906918A02C0900904148 /* icon256@2x.png */,
 			);
 			name = Icons;
+			sourceTree = "<group>";
+		};
+		7593AA9918A0EC4600E7C016 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7593AA9A18A0F5FF00E7C016 /* FeedListViewController.h */,
+				7593AA9B18A0F5FF00E7C016 /* FeedListViewController.m */,
+				7593AA9F18A0F6AD00E7C016 /* FeedItemsViewController.h */,
+				7593AAA018A0F6AD00E7C016 /* FeedItemsViewController.m */,
+				7593AAA418A0F79A00E7C016 /* FeedItemViewController.h */,
+				7593AAA518A0F79A00E7C016 /* FeedItemViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7593AAB518A13B9900E7C016 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7593AAB618A13BB500E7C016 /* UIHelper.h */,
+				7593AAB718A13BB500E7C016 /* UIHelper.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +345,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7542906D18A02C0900904148 /* icon32@2x.png in Resources */,
+				7593AAA318A0F6ED00E7C016 /* FeedItemsListView.xib in Resources */,
 				7542907118A02C0900904148 /* icon256@2x.png in Resources */,
+				7593AAA818A0F7D000E7C016 /* FeedItemView.xib in Resources */,
 				7542906B18A02C0900904148 /* icon16@2x.png in Resources */,
 				7542906E18A02C0900904148 /* icon128.png in Resources */,
 				7542906F18A02C0900904148 /* icon128@2x.png in Resources */,
@@ -304,6 +356,7 @@
 				7542906C18A02C0900904148 /* icon32.png in Resources */,
 				7542903F18A026CA00904148 /* Images.xcassets in Resources */,
 				7542903718A026CA00904148 /* Credits.rtf in Resources */,
+				7593AA9E18A0F65A00E7C016 /* FeedListView.xib in Resources */,
 				7542905F18A0276500904148 /* MainMenu.xib in Resources */,
 				7542906A18A02C0900904148 /* icon16.png in Resources */,
 			);
@@ -324,7 +377,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7593AA9C18A0F5FF00E7C016 /* FeedListViewController.m in Sources */,
+				7593AAA118A0F6AD00E7C016 /* FeedItemsViewController.m in Sources */,
 				7542903A18A026CA00904148 /* AppDelegate.m in Sources */,
+				7593AAA618A0F79A00E7C016 /* FeedItemViewController.m in Sources */,
+				7593AAAB18A0F85300E7C016 /* FeedBoardWindow.m in Sources */,
+				7593AAB818A13BB500E7C016 /* UIHelper.m in Sources */,
 				7542903318A026CA00904148 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

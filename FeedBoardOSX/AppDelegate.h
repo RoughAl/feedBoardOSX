@@ -8,8 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class FeedBoardWindow;
+
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet FeedBoardWindow *window;
 
 @end
