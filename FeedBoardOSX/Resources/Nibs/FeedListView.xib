@@ -8,6 +8,10 @@
         <customObject id="-2" userLabel="File's Owner" customClass="FeedListViewController">
             <connections>
                 <outlet property="_addFeedButton" destination="Dny-mc-hBK" id="P5J-px-TRP"/>
+                <outlet property="_addFeedPanel" destination="l7M-n6-JeZ" id="J1a-8V-Ft4"/>
+                <outlet property="_addFeedPanelAddButton" destination="88q-td-ln7" id="S6U-sI-Keb"/>
+                <outlet property="_addFeedPanelCancelButton" destination="fiN-HN-Ggl" id="u6Q-K7-Wcd"/>
+                <outlet property="_addFeedTextField" destination="9Eq-hZ-5S7" id="nXN-TO-lUH"/>
                 <outlet property="_deleteFeedButton" destination="Tao-Wf-u0R" id="qQe-Z1-R44"/>
                 <outlet property="view" destination="1" id="jx6-n3-tOn"/>
             </connections>
@@ -119,6 +123,78 @@
                 <constraint firstItem="Tao-Wf-u0R" firstAttribute="top" secondItem="77Q-DB-8aZ" secondAttribute="bottom" constant="8" id="yJz-vL-laa"/>
             </constraints>
         </customView>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="l7M-n6-JeZ" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" utility="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="132" width="373" height="112"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
+            <view key="contentView" id="X9G-8r-kXj">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="112"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="88q-td-ln7">
+                        <rect key="frame" x="101" y="7" width="82" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pqb-C3-NHd">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="addFeedPanelEnded:" target="-2" id="VQf-OL-ttc"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fiN-HN-Ggl">
+                        <rect key="frame" x="202" y="7" width="82" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Jxr-Pd-BCt">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="addFeedPanelEnded:" target="-2" id="SNc-uR-pmV"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="z65-cK-dhz">
+                        <rect key="frame" x="93" y="85" width="187" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Add New Feed" id="gHU-pJ-dfM">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9Eq-hZ-5S7">
+                        <rect key="frame" x="20" y="48" width="333" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="feed url" drawsBackground="YES" usesSingleLineMode="YES" id="Hsj-Il-fFa">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="88q-td-ln7" firstAttribute="height" secondItem="fiN-HN-Ggl" secondAttribute="height" id="2Pc-M4-STk"/>
+                    <constraint firstAttribute="bottom" secondItem="fiN-HN-Ggl" secondAttribute="bottom" constant="14" id="3jc-GC-VdQ"/>
+                    <constraint firstItem="fiN-HN-Ggl" firstAttribute="top" secondItem="9Eq-hZ-5S7" secondAttribute="bottom" constant="13" id="4i2-Yn-gLX"/>
+                    <constraint firstItem="z65-cK-dhz" firstAttribute="top" secondItem="X9G-8r-kXj" secondAttribute="top" constant="10" id="MF3-s9-sPS"/>
+                    <constraint firstItem="9Eq-hZ-5S7" firstAttribute="leading" secondItem="X9G-8r-kXj" secondAttribute="leading" constant="20" id="bRz-io-8kn"/>
+                    <constraint firstItem="fiN-HN-Ggl" firstAttribute="leading" secondItem="88q-td-ln7" secondAttribute="trailing" constant="31" id="cEp-ZI-h76"/>
+                    <constraint firstItem="88q-td-ln7" firstAttribute="width" secondItem="fiN-HN-Ggl" secondAttribute="width" id="erB-z1-D8r"/>
+                    <constraint firstAttribute="trailing" secondItem="fiN-HN-Ggl" secondAttribute="trailing" constant="95" id="fnV-MV-g43"/>
+                    <constraint firstAttribute="trailing" secondItem="9Eq-hZ-5S7" secondAttribute="trailing" constant="20" id="hCa-Ky-2uw"/>
+                    <constraint firstItem="88q-td-ln7" firstAttribute="leading" secondItem="X9G-8r-kXj" secondAttribute="leading" constant="107" id="hl7-Vf-m10"/>
+                    <constraint firstItem="z65-cK-dhz" firstAttribute="leading" secondItem="X9G-8r-kXj" secondAttribute="leading" constant="95" id="iMZ-Aq-SNl"/>
+                    <constraint firstItem="88q-td-ln7" firstAttribute="top" secondItem="9Eq-hZ-5S7" secondAttribute="bottom" constant="13" id="ibq-GO-DeN"/>
+                    <constraint firstAttribute="trailing" secondItem="z65-cK-dhz" secondAttribute="trailing" constant="95" id="rej-dC-AMG"/>
+                    <constraint firstAttribute="bottom" secondItem="88q-td-ln7" secondAttribute="bottom" constant="14" id="sAE-o4-wir"/>
+                    <constraint firstItem="9Eq-hZ-5S7" firstAttribute="top" secondItem="z65-cK-dhz" secondAttribute="bottom" constant="15" id="uw2-OX-hIr"/>
+                </constraints>
+            </view>
+        </window>
     </objects>
     <resources>
         <image name="NSAddTemplate" width="8" height="8"/>
