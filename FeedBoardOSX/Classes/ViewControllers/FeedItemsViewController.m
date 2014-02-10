@@ -8,7 +8,10 @@
 
 #import "FeedItemsViewController.h"
 
-@interface FeedItemsViewController ()
+@interface FeedItemsViewController () {
+}
+
+@property NSInteger sliderInt;
 
 @end
 

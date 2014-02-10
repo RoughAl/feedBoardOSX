@@ -25,6 +25,30 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="suo-kW-dwR">
+                    <rect key="frame" x="178" y="210" width="124" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="border" alignment="center" id="By4-S8-gIc">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="sliderInt" id="StG-hv-sI7"/>
+                    </connections>
+                </textField>
+                <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nvj-bS-ppp">
+                    <rect key="frame" x="18" y="233" width="444" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="BVi-xF-dMl">
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="sliderInt" id="yX1-44-RlX"/>
+                        </connections>
+                    </sliderCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="sliderInt" id="PTL-xp-Q21"/>
+                    </connections>
+                </slider>
             </subviews>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="2fp-T5-pK7" secondAttribute="centerX" id="LET-ok-WNS"/>

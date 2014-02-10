@@ -124,7 +124,7 @@
             </constraints>
         </customView>
         <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="l7M-n6-JeZ" customClass="NSPanel">
-            <windowStyleMask key="styleMask" titled="YES" utility="YES"/>
+            <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="132" width="373" height="112"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
