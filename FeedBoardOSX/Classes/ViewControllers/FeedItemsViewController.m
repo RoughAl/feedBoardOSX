@@ -22,6 +22,9 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Initialization code here.
+        [self.view setLayer:[[CALayer alloc] init]];
+        [self.view setWantsLayer:YES];
+        self.view.layer.backgroundColor = [[NSColor whiteColor] CGColor];
     }
     return self;
 }

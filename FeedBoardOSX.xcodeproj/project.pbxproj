@@ -34,6 +34,7 @@
 		7593AAA818A0F7D000E7C016 /* FeedItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7593AAA718A0F7D000E7C016 /* FeedItemView.xib */; };
 		7593AAAB18A0F85300E7C016 /* FeedBoardWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7593AAAA18A0F85300E7C016 /* FeedBoardWindow.m */; };
 		7593AAB818A13BB500E7C016 /* UIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7593AAB718A13BB500E7C016 /* UIHelper.m */; };
+		75F61ECC1934B32100FDDEC8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F61ECB1934B32100FDDEC8 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,8 @@
 		7593AAAA18A0F85300E7C016 /* FeedBoardWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedBoardWindow.m; path = Classes/FeedBoardWindow.m; sourceTree = "<group>"; };
 		7593AAB618A13BB500E7C016 /* UIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIHelper.h; path = Classes/Helpers/UIHelper.h; sourceTree = "<group>"; };
 		7593AAB718A13BB500E7C016 /* UIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIHelper.m; path = Classes/Helpers/UIHelper.m; sourceTree = "<group>"; };
+		75F61EC91934B31600FDDEC8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		75F61ECB1934B32100FDDEC8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F61ECC1934B32100FDDEC8 /* QuartzCore.framework in Frameworks */,
 				7542902718A026CA00904148 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,6 +136,8 @@
 		7542902518A026CA00904148 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				75F61ECB1934B32100FDDEC8 /* QuartzCore.framework */,
+				75F61EC91934B31600FDDEC8 /* CoreGraphics.framework */,
 				7542902618A026CA00904148 /* Cocoa.framework */,
 				7542904518A026CA00904148 /* XCTest.framework */,
 				7542902818A026CA00904148 /* Other Frameworks */,
