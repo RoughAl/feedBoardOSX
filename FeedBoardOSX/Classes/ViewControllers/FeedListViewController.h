@@ -11,6 +11,6 @@
 /**
  A List View Controller to show/handle the user's feeds.
  */
-@interface FeedListViewController : NSViewController
+@interface FeedListViewController : NSViewController <NSTableViewDataSource, NSTableViewDelegate>
 
 @end

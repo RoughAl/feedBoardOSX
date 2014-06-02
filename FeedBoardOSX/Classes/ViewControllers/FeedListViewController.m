@@ -16,6 +16,8 @@
     __weak IBOutlet NSTextField * _addFeedTextField;
     __weak IBOutlet NSButton * _addFeedPanelAddButton;
     __weak IBOutlet NSButton * _addFeedPanelCancelButton;
+    
+    __weak IBOutlet NSTableView * _feedsTableView;
 }
 
 @end
@@ -36,7 +38,7 @@
 }
 
 - (IBAction)deleteButtonPressed:(id)sender {
-    NSLog(@"Delete Button Pressed");
+    NSLog(@"Delete Button Pressed (#%ld)", (long)[_feedsTableView selectedRow]);
 }
 
 - (IBAction)addFeedPanelEnded:(id)sender {
@@ -68,6 +70,25 @@
     }
     
     return clipBoardURLContent;
+}
+
+#pragma mark - NSTableViewDataSource methods
+
+- (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
+    return 3;
+}
+
+#pragma mark - NSTableViewDelegate methods
+
+- (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+    NSTableCellView *result = [tableView makeViewWithIdentifier:tableColumn.identifier owner:self];
+    result.textField.stringValue = @"Sallala";
+    return result;
+}
+
+- (BOOL)tableView:(NSTableView *)aTableView shouldSelectRow:(NSInteger)rowIndex {
+    NSLog(@"Row at index #%ld selected", (long)rowIndex);
+    return YES;
 }
 
 @end
