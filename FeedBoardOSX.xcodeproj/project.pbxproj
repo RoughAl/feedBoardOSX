@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		753FE855193C939E00D73DAD /* FeedModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 753FE853193C939E00D73DAD /* FeedModel.xcdatamodeld */; };
+		753FE859193C95D500D73DAD /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 753FE858193C95D500D73DAD /* Item.m */; };
+		753FE85C193C95D500D73DAD /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 753FE85B193C95D500D73DAD /* Category.m */; };
+		753FE85F193C95D500D73DAD /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = 753FE85E193C95D500D73DAD /* Feed.m */; };
 		7542902718A026CA00904148 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7542902618A026CA00904148 /* Cocoa.framework */; };
 		7542903118A026CA00904148 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7542902F18A026CA00904148 /* InfoPlist.strings */; };
 		7542903318A026CA00904148 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7542903218A026CA00904148 /* main.m */; };
@@ -48,6 +52,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		753FE854193C939E00D73DAD /* FeedModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FeedModel.xcdatamodel; sourceTree = "<group>"; };
+		753FE857193C95D500D73DAD /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Item.h; path = Classes/Model/ManagedObjects/Item.h; sourceTree = "<group>"; };
+		753FE858193C95D500D73DAD /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Item.m; path = Classes/Model/ManagedObjects/Item.m; sourceTree = "<group>"; };
+		753FE85A193C95D500D73DAD /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Category.h; path = Classes/Model/ManagedObjects/Category.h; sourceTree = "<group>"; };
+		753FE85B193C95D500D73DAD /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Category.m; path = Classes/Model/ManagedObjects/Category.m; sourceTree = "<group>"; };
+		753FE85D193C95D500D73DAD /* Feed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Feed.h; path = Classes/Model/ManagedObjects/Feed.h; sourceTree = "<group>"; };
+		753FE85E193C95D500D73DAD /* Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Feed.m; path = Classes/Model/ManagedObjects/Feed.m; sourceTree = "<group>"; };
 		7542902318A026CA00904148 /* FeedBoardOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedBoardOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7542902618A026CA00904148 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		7542902918A026CA00904148 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -114,6 +125,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		753FE852193C936A00D73DAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				753FE856193C951700D73DAD /* ManagedObjects */,
+				753FE853193C939E00D73DAD /* FeedModel.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		753FE856193C951700D73DAD /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				753FE85A193C95D500D73DAD /* Category.h */,
+				753FE85B193C95D500D73DAD /* Category.m */,
+				753FE85D193C95D500D73DAD /* Feed.h */,
+				753FE85E193C95D500D73DAD /* Feed.m */,
+				753FE857193C95D500D73DAD /* Item.h */,
+				753FE858193C95D500D73DAD /* Item.m */,
+			);
+			name = ManagedObjects;
+			sourceTree = "<group>";
+		};
 		7542901A18A026CA00904148 = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +260,7 @@
 		7542906018A0279700904148 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				753FE852193C936A00D73DAD /* Model */,
 				7593AAB518A13B9900E7C016 /* Helpers */,
 				7593AA9918A0EC4600E7C016 /* ViewControllers */,
 				7542903818A026CA00904148 /* AppDelegate.h */,
@@ -383,11 +417,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753FE859193C95D500D73DAD /* Item.m in Sources */,
+				753FE85F193C95D500D73DAD /* Feed.m in Sources */,
 				7593AA9C18A0F5FF00E7C016 /* FeedListViewController.m in Sources */,
 				7593AAA118A0F6AD00E7C016 /* FeedItemsViewController.m in Sources */,
 				7542903A18A026CA00904148 /* AppDelegate.m in Sources */,
+				753FE855193C939E00D73DAD /* FeedModel.xcdatamodeld in Sources */,
 				7593AAA618A0F79A00E7C016 /* FeedItemViewController.m in Sources */,
 				7593AAAB18A0F85300E7C016 /* FeedBoardWindow.m in Sources */,
+				753FE85C193C95D500D73DAD /* Category.m in Sources */,
 				7593AAB818A13BB500E7C016 /* UIHelper.m in Sources */,
 				7542903318A026CA00904148 /* main.m in Sources */,
 			);
@@ -614,6 +652,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		753FE853193C939E00D73DAD /* FeedModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				753FE854193C939E00D73DAD /* FeedModel.xcdatamodel */,
+			);
+			currentVersion = 753FE854193C939E00D73DAD /* FeedModel.xcdatamodel */;
+			name = FeedModel.xcdatamodeld;
+			path = Classes/Model/FeedModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7542901B18A026CA00904148 /* Project object */;
 }
