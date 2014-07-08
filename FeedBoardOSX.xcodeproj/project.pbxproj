@@ -41,6 +41,9 @@
 		7593AAA818A0F7D000E7C016 /* FeedItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7593AAA718A0F7D000E7C016 /* FeedItemView.xib */; };
 		7593AAAB18A0F85300E7C016 /* FeedBoardWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7593AAAA18A0F85300E7C016 /* FeedBoardWindow.m */; };
 		7593AAB818A13BB500E7C016 /* UIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7593AAB718A13BB500E7C016 /* UIHelper.m */; };
+		75981EDA196BEB6C00F8ECD3 /* FBRSSFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 75981ED9196BEB6C00F8ECD3 /* FBRSSFeedParser.m */; };
+		75981EDD196C0C2D00F8ECD3 /* FBRSSFeedService.m in Sources */ = {isa = PBXBuildFile; fileRef = 75981EDC196C0C2D00F8ECD3 /* FBRSSFeedService.m */; };
+		75981EE0196C356C00F8ECD3 /* StringHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 75981EDF196C356C00F8ECD3 /* StringHelper.m */; };
 		75F61ECC1934B32100FDDEC8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F61ECB1934B32100FDDEC8 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +111,12 @@
 		7593AAAA18A0F85300E7C016 /* FeedBoardWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedBoardWindow.m; path = Classes/FeedBoardWindow.m; sourceTree = "<group>"; };
 		7593AAB618A13BB500E7C016 /* UIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIHelper.h; path = Classes/Helpers/UIHelper.h; sourceTree = "<group>"; };
 		7593AAB718A13BB500E7C016 /* UIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIHelper.m; path = Classes/Helpers/UIHelper.m; sourceTree = "<group>"; };
+		75981ED8196BEB6C00F8ECD3 /* FBRSSFeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBRSSFeedParser.h; path = Classes/BusinessLogic/Parser/FBRSSFeedParser.h; sourceTree = "<group>"; };
+		75981ED9196BEB6C00F8ECD3 /* FBRSSFeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBRSSFeedParser.m; path = Classes/BusinessLogic/Parser/FBRSSFeedParser.m; sourceTree = "<group>"; };
+		75981EDB196C0C2D00F8ECD3 /* FBRSSFeedService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBRSSFeedService.h; path = Classes/BusinessLogic/DAOService/FBRSSFeedService.h; sourceTree = "<group>"; };
+		75981EDC196C0C2D00F8ECD3 /* FBRSSFeedService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBRSSFeedService.m; path = Classes/BusinessLogic/DAOService/FBRSSFeedService.m; sourceTree = "<group>"; };
+		75981EDE196C356C00F8ECD3 /* StringHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StringHelper.h; path = Classes/Helpers/StringHelper.h; sourceTree = "<group>"; };
+		75981EDF196C356C00F8ECD3 /* StringHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StringHelper.m; path = Classes/Helpers/StringHelper.m; sourceTree = "<group>"; };
 		75F61EC91934B31600FDDEC8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		75F61ECB1934B32100FDDEC8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -299,6 +308,7 @@
 		7590A681193C99B500401664 /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				75981ED7196BEB2A00F8ECD3 /* Parser */,
 				7590A686193C9A1E00401664 /* DAOService */,
 				7590A685193C9A0700401664 /* ServiceProvider */,
 			);
@@ -319,6 +329,8 @@
 			children = (
 				7590A687193C9A5500401664 /* FBDAOService.h */,
 				7590A688193C9A5500401664 /* FBDAOService.m */,
+				75981EDB196C0C2D00F8ECD3 /* FBRSSFeedService.h */,
+				75981EDC196C0C2D00F8ECD3 /* FBRSSFeedService.m */,
 			);
 			name = DAOService;
 			sourceTree = "<group>";
@@ -343,8 +355,19 @@
 				7593AAB718A13BB500E7C016 /* UIHelper.m */,
 				7590A69C193C9ECC00401664 /* FileSystemHelper.h */,
 				7590A69D193C9ECC00401664 /* FileSystemHelper.m */,
+				75981EDE196C356C00F8ECD3 /* StringHelper.h */,
+				75981EDF196C356C00F8ECD3 /* StringHelper.m */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		75981ED7196BEB2A00F8ECD3 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				75981ED8196BEB6C00F8ECD3 /* FBRSSFeedParser.h */,
+				75981ED9196BEB6C00F8ECD3 /* FBRSSFeedParser.m */,
+			);
+			name = Parser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,7 +479,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75981EE0196C356C00F8ECD3 /* StringHelper.m in Sources */,
+				75981EDA196BEB6C00F8ECD3 /* FBRSSFeedParser.m in Sources */,
 				753FE859193C95D500D73DAD /* Item.m in Sources */,
+				75981EDD196C0C2D00F8ECD3 /* FBRSSFeedService.m in Sources */,
 				753FE85F193C95D500D73DAD /* Feed.m in Sources */,
 				7590A684193C9A0300401664 /* FBServiceProvider.m in Sources */,
 				7593AA9C18A0F5FF00E7C016 /* FeedListViewController.m in Sources */,
